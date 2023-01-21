@@ -1,0 +1,51 @@
+@font-face {
+  font-family: odin-font;
+  src: url(fonts/Norse-Bold.otf);
+}
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;    
+}
+
+.main-content {
+display: flex;
+width: 100vw;
+height: 100vh;
+margin: 0px;
+padding: 0px;  
+}
+
+.left-side {
+width: 38vw;
+background-image: url(imgs/bg.jpg);
+background-size: auto;
+background-position: center;
+
+}
+
+.logo {
+position: relative;    
+padding: 15px;
+top: 32vh;
+background-color: rgba(20, 20, 20, 0.3);
+display: flex;
+align-items: center;
+justify-content: center;  
+flex-flow: row wrap; 
+gap: 5px;
+    
+}
+
+.logo img {
+ width: 155px;
+}
+.logo .neko-title {
+font-size: 80px;   
+color: whitesmoke;    
+
+}
+
+h1 {
+    font-family: odin-font;
+}
