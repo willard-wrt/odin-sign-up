@@ -49,3 +49,20 @@ color: whitesmoke;
 h1 {
     font-family: odin-font;
 }
+
+.right-side {
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgb(240, 240, 240)
+}
+
+.right-side > div {
+font-size: 1.4rem;
+font-weight: bold;
+padding: 0 2vw;  
+}
+
+.top-moremsg {
+margin-top: 15px;
+}
