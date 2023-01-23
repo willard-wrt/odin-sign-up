@@ -5,7 +5,8 @@
 * {
 margin: 0px;
 padding: 0px;
-box-sizing: border-box;    
+box-sizing: border-box;   
+font-family: sans-serif; 
 }
 
 .main-content {
@@ -19,7 +20,7 @@ padding: 0px;
 .left-side {
 width: 38vw;
 background-image: url(imgs/bg.jpg);
-background-size: auto;
+background-size: cover;
 background-position: center;
 
 }
@@ -54,10 +55,12 @@ h1 {
 display: flex;
 flex-direction: column;
 justify-content: center;
-background-color: rgb(240, 240, 240)
+background-color: rgb(240, 240, 240);
+width: 62vw;
 }
 
-.right-side > div {
+
+.msg-container {
 font-size: 1.4rem;
 font-weight: bold;
 padding: 0 2vw;  
@@ -65,4 +68,27 @@ padding: 0 2vw;
 
 .top-moremsg {
 margin-top: 15px;
+}
+.form-title {
+font-size: 1.4rem ;
+width: 100%;  
+}
+.signup-form { 
+margin-top: 20px;  
+display: flex;
+flex-flow: row wrap; 
+gap: 20px;
+background-color: rgb(252, 252, 252);
+padding: 2rem;
+box-shadow: 0px 5px 10px rgb(173, 173, 173);
+}
+.input {
+display: flex;
+flex-direction: column;
+width: 40%;  
+font-size: 1rem;
+}
+.signup-form input {
+padding: 4px; 
+font-size: 1rem; 
 }
