@@ -2,11 +2,16 @@
   font-family: odin-font;
   src: url(fonts/Norse-Bold.otf);
 }
+
 * {
 margin: 0px;
 padding: 0px;
 box-sizing: border-box;   
 font-family: sans-serif; 
+}
+
+input:focus {
+outline: none;
 }
 
 .main-content {
@@ -41,10 +46,10 @@ gap: 5px;
 .logo img {
  width: 155px;
 }
+
 .logo .neko-title {
 font-size: 80px;   
 color: whitesmoke;    
-
 }
 
 h1 {
@@ -59,7 +64,6 @@ background-color: rgb(240, 240, 240);
 width: 62vw;
 }
 
-
 .msg-container {
 font-size: 1.4rem;
 font-weight: bold;
@@ -69,10 +73,12 @@ padding: 0 2vw;
 .top-moremsg {
 margin-top: 15px;
 }
+
 .form-title {
 font-size: 1.4rem ;
 width: 100%;  
 }
+
 .signup-form { 
 margin-top: 20px;  
 display: flex;
@@ -82,16 +88,29 @@ background-color: rgb(252, 252, 252);
 padding: 2rem;
 box-shadow: 0px 5px 10px rgb(173, 173, 173);
 }
+
 .input {
 display: flex;
 flex-direction: column;
+max-width: 400px;
 width: 40%;  
 font-size: 1rem;
 }
+
 .signup-form input {
 padding: 4px; 
-font-size: 1rem; 
+font-size: 1rem;
+border-color: #E5E7EB; 
 }
+
+input:focus:invalid {
+border-color: red;
+}
+
+input:focus:valid {
+border-color: rgb(144, 245, 141);  
+}
+
 .submit-sect {
 margin-top: 20px;   
 padding: 2rem; 
@@ -105,6 +124,11 @@ padding: 10px 30px;
 border-radius: 5px;
 border: none;
 margin-bottom: 20px;
+}
+
+.submit-sect button:hover{
+background-color: #b6da99;
+transition-duration: 0.2s;
 }
 
 .bottom-msg {
